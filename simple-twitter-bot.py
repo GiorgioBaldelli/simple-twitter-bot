@@ -18,7 +18,7 @@ sentences = ['sentence one', 'sentence two', 'sentence three', 'sentence four']
 for s in search_results:
         message = random.choice(sentences)
         sn = s.user.screen_name
-        m = "@%s " % (sn) + str(sentences)
+        m = "@%s " % (sn) + str(message)
         s = api.update_status(m, s.id)
         sleep(900)
  
